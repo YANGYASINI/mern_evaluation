@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sticky Navbar Example</title>
+  <style>
+    /* Reset margin and padding */
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Navbar styling */
+    .navbar {
+      position: sticky; /* Makes the navbar stick to the top */
+      top: 0; /* Position relative to the top */
+      background-color: #333;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000; /* Ensures the navbar stays on top of other elements */
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      padding: 5px 10px;
+    }
+
+    .navbar a:hover {
+      background-color: #575757;
+      border-radius: 5px;
+    }
+
+    /* Content styling */
+    .content {
+      padding: 20px;
+    }
+
+    section {
+      padding: 50px 0;
+      border-bottom: 1px solid #ddd;
+    }
+
+    section:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Sticky Navbar -->
+  <div class="navbar">
+    <div class="logo">My Website</div>
+    <div class="links">
+      <a href="#section1">Section 1</a>
+      <a href="#section2">Section 2</a>
+      <a href="#section3">Section 3</a>
+      <a href="#section4">Section 4</a>
+    </div>
+  </div>
+
+  <!-- Page Content -->
+  <div class="content">
+    <section id="section1">
+      <h2>Section 1</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque placerat vitae lacus at scelerisque. Pellentesque habitant morbi tristique senectus et netus.</p>
+    </section>
+    <section id="section2">
+      <h2>Section 2</h2>
+      <p>Curabitur dignissim eros ac dolor congue, in ultricies purus volutpat. Nam vehicula risus vel est feugiat dapibus.</p>
+    </section>
+    <section id="section3">
+      <h2>Section 3</h2>
+      <p>Suspendisse potenti. Donec vehicula nisi nec eros tincidunt, ac tempus libero fermentum. In eu sapien id arcu vestibulum fringilla.</p>
+    </section>
+    <section id="section4">
+      <h2>Section 4</h2>
+      <p>Mauris vel ipsum non eros tempor facilisis. Cras faucibus orci sed neque viverra, vel posuere felis pulvinar.</p>
+    </section>
+  </div>
+</body>
+</html>
